@@ -13,6 +13,9 @@
 		D040E8A727BA451E0042FA12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D040E8A527BA451E0042FA12 /* Main.storyboard */; };
 		D040E8A927BA451F0042FA12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D040E8A827BA451F0042FA12 /* Assets.xcassets */; };
 		D040E8AC27BA451F0042FA12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D040E8AA27BA451F0042FA12 /* LaunchScreen.storyboard */; };
+		D040E8B627BA47130042FA12 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040E8B527BA47130042FA12 /* Task.swift */; };
+		D040E8BD27BA48670042FA12 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040E8BB27BA48670042FA12 /* TaskTableViewCell.swift */; };
+		D040E8BE27BA48670042FA12 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D040E8BC27BA48670042FA12 /* TaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D040E8A827BA451F0042FA12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D040E8AB27BA451F0042FA12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D040E8AD27BA451F0042FA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D040E8B527BA47130042FA12 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D040E8BB27BA48670042FA12 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		D040E8BC27BA48670042FA12 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +46,7 @@
 		D040E89327BA451E0042FA12 = {
 			isa = PBXGroup;
 			children = (
-				D040E89E27BA451E0042FA12 /* Task-manager */,
+				D040E89E27BA451E0042FA12 /* Task-manager§ */,
 				D040E89D27BA451E0042FA12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,9 +59,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D040E89E27BA451E0042FA12 /* Task-manager */ = {
+		D040E89E27BA451E0042FA12 /* Task-manager§ */ = {
 			isa = PBXGroup;
 			children = (
+				D040E8B427BA47080042FA12 /* View */,
+				D040E8B327BA47030042FA12 /* Model */,
 				D040E89F27BA451E0042FA12 /* AppDelegate.swift */,
 				D040E8A127BA451E0042FA12 /* SceneDelegate.swift */,
 				D040E8A327BA451E0042FA12 /* TasksController.swift */,
@@ -64,7 +72,24 @@
 				D040E8AA27BA451F0042FA12 /* LaunchScreen.storyboard */,
 				D040E8AD27BA451F0042FA12 /* Info.plist */,
 			);
-			path = "Task-manager";
+			path = "Task-manager§";
+			sourceTree = "<group>";
+		};
+		D040E8B327BA47030042FA12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D040E8B527BA47130042FA12 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D040E8B427BA47080042FA12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D040E8BB27BA48670042FA12 /* TaskTableViewCell.swift */,
+				D040E8BC27BA48670042FA12 /* TaskTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D040E8BE27BA48670042FA12 /* TaskTableViewCell.xib in Resources */,
 				D040E8AC27BA451F0042FA12 /* LaunchScreen.storyboard in Resources */,
 				D040E8A927BA451F0042FA12 /* Assets.xcassets in Resources */,
 				D040E8A727BA451E0042FA12 /* Main.storyboard in Resources */,
@@ -138,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D040E8B627BA47130042FA12 /* Task.swift in Sources */,
 				D040E8A427BA451E0042FA12 /* TasksController.swift in Sources */,
+				D040E8BD27BA48670042FA12 /* TaskTableViewCell.swift in Sources */,
 				D040E8A027BA451E0042FA12 /* AppDelegate.swift in Sources */,
 				D040E8A227BA451E0042FA12 /* SceneDelegate.swift in Sources */,
 			);
