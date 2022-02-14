@@ -24,7 +24,7 @@ final class TasksController: UIViewController {
 	var tasks: [Task]?
 	
 	/// Предыдущий контроллер в цепочке
-	var prevController: TasksController?
+	weak var prevController: ParentController?
 
 	/// IndexPath отображаемой задачи в родительском контроллере
 	var parentIndexPath: Int?
@@ -132,17 +132,28 @@ extension TasksController: AddTaskDelegate {
 			tasks = [newTask]
 		}
 		
-		// Если контроллер не корневой, то нужно сообщить родителю, что появились подзадачи
 		if let prevController = prevController,
-		   let parentIndex = parentIndexPath,
-			let tasks = prevController.tasks {
-			
-			if tasks[parentIndex].subtasks != nil {
-				tasks[parentIndex].subtasks?.append(newTask)
+		   let parentIndexPath = parentIndexPath {
+			prevController.addSubtask(newTask , at: parentIndexPath)
+		}
+		
+		tableView.reloadData()
+	}
+}
+
+// MARK: - ParentController
+
+extension TasksController: ParentController {
+	
+	func addSubtask(_ task: Task, at index: Int) {
+		guard tasks != nil else { return }
+		
+		if let tasks = tasks {
+			if tasks[index].subtasks != nil {
+				tasks[index].subtasks?.append(task)
 			} else {
-				tasks[parentIndex].subtasks = [newTask]
+				tasks[index].subtasks = [task]
 			}
-			prevController.tableView.reloadData()
 		}
 		
 		tableView.reloadData()
