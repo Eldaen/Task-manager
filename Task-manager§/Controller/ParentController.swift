@@ -11,5 +11,5 @@ import Foundation
 protocol ParentController: AnyObject {
 	
 	/// Добавляет свежесозданную задачу в список подзадач текущей задачи
-	func addSubtask(_ task: Task, at index: Int)
+	func addSubtask(_ task: TaskModel, at index: Int)
 }
