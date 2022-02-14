@@ -8,7 +8,7 @@
 import Foundation
 
 /// Класс задачи
-class Task {
+final class Task {
 	
 	/// Имя задачи
 	var name: String

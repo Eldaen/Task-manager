@@ -17,7 +17,6 @@
 		D040E8BD27BA48670042FA12 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040E8BB27BA48670042FA12 /* TaskTableViewCell.swift */; };
 		D040E8BE27BA48670042FA12 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D040E8BC27BA48670042FA12 /* TaskTableViewCell.xib */; };
 		D040E8C127BA50D40042FA12 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040E8C027BA50D40042FA12 /* AddTaskController.swift */; };
-		D040E8C327BA59930042FA12 /* TasksStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040E8C227BA59930042FA12 /* TasksStorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		D040E8BB27BA48670042FA12 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		D040E8BC27BA48670042FA12 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		D040E8C027BA50D40042FA12 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
-		D040E8C227BA59930042FA12 /* TasksStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksStorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				D040E8A827BA451F0042FA12 /* Assets.xcassets */,
 				D040E8AA27BA451F0042FA12 /* LaunchScreen.storyboard */,
 				D040E8AD27BA451F0042FA12 /* Info.plist */,
-				D040E8C227BA59930042FA12 /* TasksStorageService.swift */,
 			);
 			path = "Task-manager§";
 			sourceTree = "<group>";
@@ -183,7 +180,6 @@
 				D040E8C127BA50D40042FA12 /* AddTaskController.swift in Sources */,
 				D040E8BD27BA48670042FA12 /* TaskTableViewCell.swift in Sources */,
 				D040E8A027BA451E0042FA12 /* AppDelegate.swift in Sources */,
-				D040E8C327BA59930042FA12 /* TasksStorageService.swift in Sources */,
 				D040E8A227BA451E0042FA12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
