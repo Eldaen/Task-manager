@@ -84,7 +84,6 @@
 				D040E8AA27BA451F0042FA12 /* LaunchScreen.storyboard */,
 				D040E8AD27BA451F0042FA12 /* Info.plist */,
 				D040E8C627BA92B20042FA12 /* CoreData.xcdatamodeld */,
-				D040E8C927BA941E0042FA12 /* DataStoreManager.swift */,
 			);
 			path = "Task-manager§";
 			sourceTree = "<group>";
@@ -95,6 +94,7 @@
 				D040E8CB27BA946D0042FA12 /* TaskModel+CoreDataClass.swift */,
 				D040E8CC27BA946D0042FA12 /* TaskModel+CoreDataProperties.swift */,
 				D040E8B527BA47130042FA12 /* Task.swift */,
+				D040E8C927BA941E0042FA12 /* DataStoreManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

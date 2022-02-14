@@ -17,7 +17,10 @@ protocol DataManager: AnyObject {
 	/// Добавляет задаче подзадачу
 	func addSubtask(task subtask: TaskModel, to parentTask: TaskModel)
 	
+	/// Получает корневые задачи
 	func getRootTasks() -> [TaskModel]?
+	
+	/// Получает задачи
 	func getTasks(id: String) -> [TaskModel]?
 }
 
@@ -51,65 +54,7 @@ final class DataStoreManager: DataManager {
 			}
 		}
 	}
-	
-//	func obtainMainUser() -> User {
-//		let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-//		fetchRequest.predicate = NSPredicate(format: "isMain = true")
-//
-//		if let users = try? viewContext.fetch(fetchRequest) as? [User],
-//		   !users.isEmpty {
-//
-//			return users.first!
-//		} else {
-//			let company = Company(context: viewContext)
-//			company.name = "Apple"
-//
-//			let user = User(context: viewContext)
-//			user.name = "Mark777"
-//			user.age = 23
-//			user.job = company
-//			user.isMain = true
-//
-//			do {
-//				try viewContext.save()
-//			} catch let error {
-//				print(error)
-//			}
-//
-//			return user
-//		}
-//
-//
-//	}
-	
-//	func updateMainUser(with name: String) {
-//		let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-//		fetchRequest.predicate = NSPredicate(format: "isMain = true")
-//
-//		if let users = try? viewContext.fetch(fetchRequest) as? [User] {
-//			guard let mainUser = users.first else { return }
-//
-//			mainUser.name = name
-//			try? viewContext.save()
-//		}
-//	}
-	
-//	func removeMainUser() {
-//		let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-//		fetchRequest.predicate = NSPredicate(format: "isMain = true")
-//
-//		do {
-//			if let users = try viewContext.fetch(fetchRequest) as? [User],
-//			   !users.isEmpty {
-//
-//				viewContext.delete(users.first!)
-//				try viewContext.save()
-//			}
-//		} catch let error {
-//			print(error)
-//		}
-//	}
-	
+
 	/// Добавляет новую задачу
 	func addNewTask(name: String, description: String, isRoot: Bool = false) -> TaskModel {
 		

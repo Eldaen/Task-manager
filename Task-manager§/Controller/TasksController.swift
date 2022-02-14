@@ -23,6 +23,7 @@ final class TasksController: UIViewController {
 	/// Список задач
 	var tasks: [TaskModel]?
 	
+	/// UUID материнской задачи
 	var parentId: String?
 	
 	/// Предыдущий контроллер в цепочке
