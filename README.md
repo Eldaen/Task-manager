@@ -3,7 +3,7 @@
 
 # Скриншоты
 ![изображение](https://user-images.githubusercontent.com/13965776/154957530-99eb0ea8-768f-4ad6-93e3-15482f61b082.png)
-![изображение](https://user-images.githubusercontent.com/13965776/154957579-66bd29f3-f002-44ea-b599-82f79c81f962.png)
+![изображение](https://user-images.githubusercontent.com/13965776/154957888-b1828904-dd22-4a5a-bb91-227cbb1ad68d.png)
 
 # Описание
 Очень простой проект, чтобы появилось понимание, как работает ***Composite***
